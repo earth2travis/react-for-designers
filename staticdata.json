@@ -1,0 +1,52 @@
+{
+  "cells": [
+    {
+      "title": "Intro to React",
+      "image": "https://raw.githubusercontent.com/earth2travis/react-for-designers/master/src/images/react-small.png"
+    },
+    {
+      "title": "Basic Styling with CSS",
+      "image": "https://raw.githubusercontent.com/earth2travis/react-for-designers/master/src/images/react-small.png"
+    },
+    {
+      "title": "Adaptive Layouts with CSS Grid",
+      "image": "https://raw.githubusercontent.com/earth2travis/react-for-designers/master/src/images/react-small.png"
+    },
+    {
+      "title": "Interactions and Animations",
+      "image": "https://raw.githubusercontent.com/earth2travis/react-for-designers/master/src/images/react-small.png"
+    },
+    {
+      "title": "SVG Animation",
+      "image": "https://raw.githubusercontent.com/earth2travis/react-for-designers/master/src/images/react-small.png"
+    },
+    {
+      "title": "Components and Props",
+      "image": "https://raw.githubusercontent.com/earth2travis/react-for-designers/master/src/images/react-small.png"
+    },
+    {
+      "title": "States and Events",
+      "image": "https://raw.githubusercontent.com/earth2travis/react-for-designers/master/src/images/react-small.png"
+    },
+    {
+      "title": "Styled Components",
+      "image": "https://raw.githubusercontent.com/earth2travis/react-for-designers/master/src/images/react-small.png"
+    },
+    {
+      "title": "Static Data with JSON",
+      "image": "https://raw.githubusercontent.com/earth2travis/react-for-designers/master/src/images/react-small.png"
+    },
+    {
+      "title": "GraphQL with Contentful",
+      "image": "https://raw.githubusercontent.com/earth2travis/react-for-designers/master/src/images/react-small.png"
+    },
+    {
+      "title": "Publish to Netlify",
+      "image": "https://raw.githubusercontent.com/earth2travis/react-for-designers/master/src/images/react-small.png"
+    },
+    {
+      "title": "Payments with Stripe",
+      "image": "https://raw.githubusercontent.com/earth2travis/react-for-designers/master/src/images/react-small.png"
+    }
+  ]
+}
