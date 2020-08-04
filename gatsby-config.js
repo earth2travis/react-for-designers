@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `React for Designers`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Complete course on React from Design + Code.`,
+    keywords: `React, design, course`,
     author: `@earth2travis`,
   },
   plugins: [
@@ -30,5 +31,12 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-source-contentful",
+      options: {
+        spaceId: "7pbp2s8vr6ep",
+        accessToken: "Jt_hM68uygdF8en1KioknTUds6fqi52OiylETOWYBPo",
+      },
+    },
   ],
 }
