@@ -1,10 +1,10 @@
 // Initialize dotenv
-/* require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`, // or '.env'
-}); */
+require("dotenv").config({
+  path: `.env`, // or '.env' .env.${process.env.NODE_ENV}
+})
 
 // And then you can use the config in gatsby-config.js
-// const config = require('gatsby-plugin-config');
+const config = require("gatsby-plugin-config")
 
 module.exports = {
   siteMetadata: {
@@ -42,10 +42,8 @@ module.exports = {
     {
       resolve: "gatsby-source-contentful",
       options: {
-        spaceId: `7pbp2s8vr6ep`,
-        // spaceId: process.env.GATSBY_CONTENTFUL_SPACE_ID,
-        accessToken: `Jt_hM68uygdF8en1KioknTUds6fqi52OiylETOWYBPo`,
-        // accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
+        spaceId: process.env.GATSBY_CONTENTFUL_SPACE_ID,
+        accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
       },
     },
   ],
