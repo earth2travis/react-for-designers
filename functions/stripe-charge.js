@@ -1,4 +1,4 @@
-const stripe = require("stripe")("sk_live_cV2fJOb17YlCRdX9O7EVMgSG00uPhZW5Dq")
+const stripe = require("stripe")("")
 
 exports.handler = async function (event) {
   const { tokenId, email, name, description, amount } = JSON.parse(event.body)
