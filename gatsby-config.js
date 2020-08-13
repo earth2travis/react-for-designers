@@ -1,7 +1,7 @@
 // Initialize dotenv
-require("dotenv").config({
+/* require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`, // or '.env'
-})
+}) */
 
 // And then you can use the config in gatsby-config.js
 const config = require("gatsby-plugin-config")
@@ -42,8 +42,10 @@ module.exports = {
     {
       resolve: "gatsby-source-contentful",
       options: {
-        spaceId: process.env.GATSBY_CONTENTFUL_SPACE_ID,
-        accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
+        spaceId: "7pbp2s8vr6ep",
+        accessToken: "WnFvsnBdSCMqVgh_u_FZ_QFFpO1e_CtGJg8yPylNLRc",
+        // spaceId: process.env.GATSBY_CONTENTFUL_SPACE_ID,
+        // accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
       },
     },
   ],
