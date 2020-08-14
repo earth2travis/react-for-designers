@@ -24,7 +24,7 @@ if (!spaceId || !accessToken) {
 }
 
 // And then you can use the config in gatsby-config.js
-const config = require("gatsby-plugin-config")
+// const config = require("gatsby-plugin-config")
 
 module.exports = {
   siteMetadata: {
@@ -60,7 +60,7 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     {
-      resolve: "gatsby-source-contentful",
+      resolve: `gatsby-source-contentful`,
       options: contentfulConfig,
     },
   ],
