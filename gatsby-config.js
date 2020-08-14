@@ -1,7 +1,27 @@
-// Initialize dotenv
-/* require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`, // or '.env'
-}) */
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+const contentfulConfig = {
+  spaceId: process.env.CONTENTFUL_SPACE_ID,
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+}
+
+// if you want to use the preview API please define
+// CONTENTFUL_HOST in your environment config
+// the `host` property should map to `preview.contentful.com`
+// https://www.contentful.com/developers/docs/references/content-preview-api/#/reference/spaces/space/get-a-space/console/js
+if (process.env.CONTENTFUL_HOST) {
+  contentfulConfig.host = process.env.CONTENTFUL_HOST
+}
+
+const { spaceId, accessToken } = contentfulConfig
+
+if (!spaceId || !accessToken) {
+  throw new Error(
+    "Contentful spaceId and the access token need to be provided."
+  )
+}
 
 // And then you can use the config in gatsby-config.js
 const config = require("gatsby-plugin-config")
@@ -41,12 +61,7 @@ module.exports = {
     // `gatsby-plugin-offline`,
     {
       resolve: "gatsby-source-contentful",
-      options: {
-        spaceId: "7pbp2s8vr6ep",
-        accessToken: "WnFvsnBdSCMqVgh_u_FZ_QFFpO1e_CtGJg8yPylNLRc",
-        // spaceId: process.env.GATSBY_CONTENTFUL_SPACE_ID,
-        // accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
-      },
+      options: contentfulConfig,
     },
   ],
 }
