@@ -1,3 +1,4 @@
+/*
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
@@ -22,9 +23,10 @@ if (!spaceId || !accessToken) {
     "Contentful spaceId and the access token need to be provided."
   )
 }
+*/
 
 // And then you can use the config in gatsby-config.js
-// const config = require("gatsby-plugin-config")
+const config = require("gatsby-plugin-config")
 
 module.exports = {
   siteMetadata: {
@@ -61,7 +63,11 @@ module.exports = {
     // `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-contentful`,
-      options: contentfulConfig,
+      // options: contentfulConfig,
+      options: {
+        spaceId: "7pbp2s8vr6ep",
+        accessToken: "WnFvsnBdSCMqVgh_u_FZ_QFFpO1e_CtGJg8yPylNLRc",
+      },
     },
   ],
 }
